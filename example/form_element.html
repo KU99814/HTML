@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>form element</title>
+</head>
+<body>
+<form oninput="x.value = parseInt(a.value)+parseInt(b.value)">
+<h2>text and label</h2>
+<hr>
+<label for="fname">text:</label>
+<input type="text" id="fname" name="fname">
+<h2>select</h2>
+<hr>
+<label for="colors">Color</label>
+<select id="colors" name="colors" size="4" multiple>
+ <option value="red">red</option>
+ <option value="blue">blue</option>
+ <option value="green" selected>green</option>
+ <option value="pink">pink</option>
+</select>
+<h2>text area</h2>
+<hr>
+<textarea name="message" rows="10" cols="20">
+This is text area
+</textarea>
+<h2>button</h2>
+<hr>
+<button type="button" onclick="alert('click button!')">Click me</button>
+<h2>field set and legend</h2>
+<hr>
+<fieldset>
+ <legend>text field set</legend>
+  <label for="fname2">label</label>
+  <input type="text" id="fname2" name=fname2"><br>
+  <button type="button">button</button>
+</fieldset>
+<h2>data list</h2>
+<hr>
+<input list="food">
+<datalist id="food">
+  <option value="ice cream">
+  <option value="juice">
+  <option value="beef">
+  <option value="pork">
+  <option value="chicken">
+</datalist>
+<h2>output</h2>
+<hr>
+<input type="number" id="a" name="a" value="50">
++
+<input type="number" id="b" name="b" value="50">
+=
+<output name="x" for="a b"></output>
+</form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<meat charset="utf-8"></meta>
+<title>Table</title>
+<style>
+table,th,td{
+border: 1px solid black;
+border-collapse: collapse;
+padding:15px;
+}
+th{
+text-align:left;
+}
+
+
+#t1 tr:nth-child(even){
+   background-color:#eee;
+}
+
+#t1 tr:nyh-child(odd){
+   background-color:#fff;
+}
+
+#t1 th{
+    color:white;
+    background-color:black;
+}
+</style>
+</head>
+<body>
+<table style="width:100%;">
+<caption>Table</caption>
+<tr>
+ <th>姓名</th>
+ <th>性別</th>
+ <th>年齡</th>
+</tr>
+<tr>
+  <td>李曉明</td>
+  <td>男</td>
+  <td>13</td>
+</tr>
+<tr>
+  <td>王大花</td>
+  <td>女</td>
+  <td>44</td>
+</tr>
+</table>
+
+<table>
+
+<caption>Test2</caption>
+<tr>
+  <th>姓名</th>
+  <th colspan="2">電話</th>
+</tr>
+<tr>
+   <td>陳小樹</td>
+   <td>01-1111111</td>
+   <td>02-2222222</td>
+</tr>
+<tr >
+   <td rowspan="2">陳大樹</td>
+   <td>03-3333333</td>
+   <td>04-4444444</td>
+</tr>
+<tr >
+
+   <td>05-5555555</td>
+   <td>06-6666666</td>
+</tr>
+</table>
+
+<table id="t1">
+   <caption>test3</caption>
+<tr>
+   <th>name</th>
+   <th>age</th>
+</tr>
+<tr>
+   <td>john</td>
+   <td>20</td>
+</tr>
+<tr>
+   <td>mary</td>
+   <td>33</td>
+</tr>
+<tr>
+   <td>Jack</td>
+   <td>10</td>
+</tr>
+</table>
+</body>
+</html>
